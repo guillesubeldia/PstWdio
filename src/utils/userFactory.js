@@ -9,7 +9,7 @@ export function generateUser() {
         postalCode: "12345",
         city: "Test City",
         state: "Test State",
-        country: "USA",
+        country: "Argentina",
         phone: `555${timestamp.toString().slice(-7)}`,
         email: `user${timestamp}@test.com`,
         password: generatePassword()
@@ -18,5 +18,5 @@ export function generateUser() {
 
 function generatePassword() {
     // Cumple tus requisitos: mayus, minus, número, símbolo
-    return "Pass@" + Math.floor(Math.random() * 10000);
+    return "Contra@" + Math.floor(Math.random() * 10000);
 }

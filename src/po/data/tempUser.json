@@ -1,0 +1,13 @@
+{
+  "firstName": "Test",
+  "lastName": "User",
+  "dob": "1990-05-10",
+  "street": "Test Street 123",
+  "postalCode": "12345",
+  "city": "Test City",
+  "state": "Test State",
+  "country": "Argentina",
+  "phone": "5554777935",
+  "email": "user1763404777935@test.com",
+  "password": "Contra@1449"
+}

@@ -1,4 +1,4 @@
-import HomePage from '../po/pages/Home.page.js'
+const HomePage = require('../po/pages/Home.page.js')
 
 describe('Practice Software Testing - Home Page', () => {
 
