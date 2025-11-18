@@ -66,6 +66,8 @@ exports.config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
+
+    
     //
     // Set specific log levels per logger
     // loggers:
@@ -128,7 +130,18 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    
+    // reporters: ['spec'],
+    //comente la linea de arriba y agregue el bloque de abajo para configurar allure
+    reporters: [
+        'spec', // Opcional, para ver los resultados en la consola
+        ['allure', {
+            outputDir: 'src/reports/allure-results', // Directorio donde se guardaran los archivos de reporte
+            disableWebdriverStepsReporting: true, // Si quieres deshabilitar los pasos automaticos de wdio
+            disableWebdriverScreenshotsReporting: true, // Habilita/deshabilita captura de pantalla en fallos
+            addQuery: true, // Agrega la query de la url para generar un nombre mas descriptivo del test
+        }],
+    ],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
